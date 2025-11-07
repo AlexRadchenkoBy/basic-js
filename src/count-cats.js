@@ -17,9 +17,8 @@ const { NotImplementedError } = require('../lib');
 function countCats(matrix) {
   let count = 0;
 
-  const row = matrix[i];
   for (let i = 0; i < matrix.length; i++) {
-
+    const row = matrix[i];
     for (let j = 0; j < row.length; j++) {
       if (row[j] === '^^') {
         count++;

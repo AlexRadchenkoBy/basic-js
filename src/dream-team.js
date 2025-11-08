@@ -23,7 +23,7 @@ function createDreamTeam(members) {
   for (let i = 0; i < members.length; i++) {
     const member = members[i];
     if (typeof member === 'string') {
-      const initial = member.trim.charAt(0).toUpperCase();
+      const initial = member.trim().charAt(0).toUpperCase();
       if (initial) {
         teamInitials.push(initial);
       }
